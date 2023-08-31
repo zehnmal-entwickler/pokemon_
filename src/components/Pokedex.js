@@ -12,16 +12,17 @@ function Pokedex() {
   }, []);
   //
   return (
-<>
-
-<div className="pokemain_backgrnd"><PokeCards /></div>
-
-<div><PokeDetails /></div>
-</>
-
-
+    <>
+      <div className="pokedex_Container">
+        <div className="pokemain_backgrnd">
+          <PokeCards />
+        </div>
+        <div>
+          <PokeDetails />
+        </div>
+      </div>
+    </>
   );
-  
 }
 
 export default Pokedex;
