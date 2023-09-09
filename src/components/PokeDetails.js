@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function PokeDetails() {
+function PokeDetails() {
   return (
     <>
         <h1>Picachu</h1>
@@ -20,3 +20,5 @@ export default function PokeDetails() {
       </>
   );
 }
+
+export default PokeDetails;
