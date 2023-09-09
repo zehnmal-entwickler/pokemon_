@@ -7,4 +7,22 @@
   height: 150px;
   border-radius: 8px;
   border: solid 2px #fdec8b;
+  cursor: pointer;
+
+}
+
+.pokeImg_cont{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+margin: 6px;
+display: flex;
+justify-content: center;
+background-color: whitesmoke;
+border-radius: 8px;
+}
+
+.Pokename_Cont{
+  height: 28%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

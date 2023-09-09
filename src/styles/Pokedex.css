@@ -2,9 +2,37 @@ body {
   background-color: #A0D7FF;
 }
 
-.pokemain_backgrnd {
+/* .pokemain_backgrnd {
   background-repeat: no-repeat;
   height: 100%;
   background-position: center;
   background-size: cover;
+} */
+
+/* .pokeCards_Cont, .pokeDetails_Cont{
+  flex-basis: 50%;
+} */
+
+.pokeCards_Cont{
+margin-left: 10%;
+width: 30%;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px,0.5fr));
+}
+
+.pokeDetails_Cont{
+  width: 50%;
+  text-align: center;
+  color: black;
+  position: fixed;
+  top: 25%;
+  right: 10%;
+}
+
+.pokeDetails_Cont img{
+  margin: 2rem;
+}
+
+.pokeDetails_Cont h1{
+  text-transform: uppercase;
 }
