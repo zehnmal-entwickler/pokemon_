@@ -1,0 +1,28 @@
+.pokeCard {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  margin: 4px;
+  background-color: #ffd700;
+  width: 200px;
+  height: 150px;
+  border-radius: 8px;
+  border: solid 2px #fdec8b;
+  cursor: pointer;
+
+}
+
+.pokeImg_cont{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+margin: 6px;
+display: flex;
+justify-content: center;
+background-color: whitesmoke;
+border-radius: 8px;
+}
+
+.Pokename_Cont{
+  height: 28%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
