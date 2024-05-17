@@ -1,16 +1,15 @@
 import React, { useState, useEffect } from "react";
-import PokeCards from "./PokeCards";
 import axios from "axios";
-import "../styles/Pokedex.css";
-import PokeDetails from "./PokeDetails";
-//
-import pokeLandScape from "../PokeImage/pokeLandscape.JPG"
+import { PokeCards } from "./PokeCards";
+import { PokeDetails } from "./PokeDetails";
 
-function Pokedex() {
+import "@/styles/Pokedex.module.css";
+
+export function Pokedex() {
   const [pokeData, setPokeData] = useState([]);
   const [pokeUrl, setPokeUrl] = useState("https://pokeapi.co/api/v2/pokemon");
   const [pokeLoading, setPokeLoading] = useState(true);
-  const [pokeDex, setPokeDex] = useState()
+  const [pokeDex, setPokeDex] = useState();
   //
   async function pokefunctionMon() {
     setPokeLoading(true);
@@ -42,14 +41,16 @@ function Pokedex() {
     <>
       <div className="pokedex_Container">
         <div className="pokeCards_Cont">
-          <PokeCards pokeStuff={pokeData} loading={pokeLoading} pokeDetail={pokemonVal => setPokeDex(pokemonVal)}/>
+          <PokeCards
+            pokeStuff={pokeData}
+            loading={pokeLoading}
+            pokeDetail={(pokemonVal) => setPokeDex(pokemonVal)}
+          />
         </div>
         <div className="pokeDetails_Cont">
-          <PokeDetails data={pokeDex}/>
+          <PokeDetails data={pokeDex} />
         </div>
       </div>
     </>
   );
 }
-
-export default Pokedex;

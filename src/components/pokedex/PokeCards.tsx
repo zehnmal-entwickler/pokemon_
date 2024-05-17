@@ -1,7 +1,8 @@
 import React from "react";
-import "../styles/PokeCards.css";
 
-function PokeCards({ pokeStuff, loading, pokeDetail }) {
+import "@/styles/PokeCards.module.css";
+
+export function PokeCards({ pokeStuff, loading, pokeDetail }) {
   console.log("POKESTUUFFFFF", pokeStuff);
   return (
     <>
@@ -32,5 +33,3 @@ function PokeCards({ pokeStuff, loading, pokeDetail }) {
     </>
   );
 }
-
-export default PokeCards;
