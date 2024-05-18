@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "@/styles/PokeCards.module.css"; //
 
 export function PokeDetails() {
   return (

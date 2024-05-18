@@ -3,7 +3,7 @@ import axios from "axios";
 import { PokeCards } from "./PokeCards";
 import { PokeDetails } from "./PokeDetails";
 
-import "@/styles/Pokedex.module.css";
+import styles from "@/styles/Pokedex.module.css"; //
 
 export function Pokedex() {
   const [pokeData, setPokeData] = useState([]);
@@ -39,15 +39,15 @@ export function Pokedex() {
   //
   return (
     <>
-      <div className="pokedex_Container">
-        <div className="pokeCards_Cont">
+      <div className={styles.pokedex_Container}>
+        <div className={styles.pokeCards_Cont}>
           <PokeCards
             pokeStuff={pokeData}
             loading={pokeLoading}
             pokeDetail={(pokemonVal) => setPokeDex(pokemonVal)}
           />
         </div>
-        <div className="pokeDetails_Cont">
+        <div className={styles.pokeDetails_Cont}>
           <PokeDetails data={pokeDex} />
         </div>
       </div>
