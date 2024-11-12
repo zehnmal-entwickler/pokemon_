@@ -1,6 +1,8 @@
 import React from "react";
 import "../styles/PokeCards.css";
 
+//console.log("it is just a test");
+
 function PokeCards({ pokeStuff, loading, pokeDetail }) {
   console.log("POKESTUUFFFFF", pokeStuff);
   return (
